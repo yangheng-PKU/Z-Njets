@@ -1,0 +1,219 @@
+DEBUG 2020-02-10 13:40:21.773 UTC: 	 Running on: Linux naf-cms13.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-10 13:40:21.849 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-10 13:40:21.850 UTC: 	 Executing command: 'submit'
+DEBUG 2020-02-10 13:40:21.850 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+DEBUG 2020-02-10 13:40:21.876 UTC: 	 Checking credentials
+DEBUG 2020-02-10 13:40:21.876 UTC: 	 Found proxy file /tmp/x509up_u31835
+DEBUG 2020-02-10 13:40:21.876 UTC: 	 Getting proxy life time left
+DEBUG 2020-02-10 13:40:22.480 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -timeleft
+ output : 43169
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-10 13:40:22.983 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -actimeleft
+ output : 43169
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-10 13:40:22.984 UTC: 	 Proxy valid for 11:59:29 hours
+INFO 2020-02-10 13:40:22.984 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2020-02-10 13:40:22.984 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-02-10 13:40:25.123 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-02-10 13:40:25.123 UTC: 	 Working area '/afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_10/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost1' already exists 
+Please change the requestName in the config file
+ERROR 2020-02-10 13:40:25.123 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_10/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost1' already exists 
+Please change the requestName in the config file
+DEBUG 2020-02-16 12:26:55.505 UTC: 	 Running on: Linux naf-cms13.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-16 12:26:55.523 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-16 12:26:55.524 UTC: 	 Executing command: 'submit'
+DEBUG 2020-02-16 12:26:55.524 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+DEBUG 2020-02-16 12:26:55.548 UTC: 	 Checking credentials
+DEBUG 2020-02-16 12:26:55.548 UTC: 	 Found proxy file /tmp/x509up_u31835
+DEBUG 2020-02-16 12:26:55.548 UTC: 	 Getting proxy life time left
+DEBUG 2020-02-16 12:26:56.052 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -timeleft
+ output : 43182
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-16 12:26:56.557 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -actimeleft
+ output : 43182
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-16 12:26:56.558 UTC: 	 Proxy valid for 11:59:42 hours
+INFO 2020-02-16 12:26:56.558 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2020-02-16 12:26:56.558 UTC: 	 Loading CRAB configuration file.
+DEBUG 2020-02-16 12:26:58.798 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2020-02-16 12:26:58.799 UTC: 	 Working area '/afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost' already exists 
+Please change the requestName in the config file
+ERROR 2020-02-16 12:26:58.799 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 324, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 418, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost' already exists 
+Please change the requestName in the config file
+DEBUG 2020-02-16 13:03:22.841 UTC: 	 Running on: Linux naf-cms13.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-16 13:03:22.859 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-16 13:03:22.860 UTC: 	 Executing command: 'kill'
+DEBUG 2020-02-16 13:03:22.860 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+ERROR 2020-02-16 13:03:22.861 UTC: 	 Error: Please indicate the CRAB project directory with --dir=<project-directory>.
+ERROR 2020-02-16 13:03:22.861 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 591, in validateOptions
+    raise ex
+MissingOptionException: [91mError[0m: Please indicate the CRAB project directory with --dir=<project-directory>.
+DEBUG 2020-02-16 13:20:38.263 UTC: 	 Running on: Linux naf-cms12.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-16 13:20:38.273 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-16 13:20:38.273 UTC: 	 Executing command: 'kill'
+DEBUG 2020-02-16 13:20:38.274 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+ERROR 2020-02-16 13:20:38.274 UTC: 	 Error: heyang_crab_NanoPost is not a valid CRAB project directory.
+ERROR 2020-02-16 13:20:38.274 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: heyang_crab_NanoPost is not a valid CRAB project directory.
+DEBUG 2020-02-20 15:29:09.839 UTC: 	 Running on: Linux naf-cms11.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-20 15:29:09.849 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-20 15:29:09.850 UTC: 	 Executing command: 'status'
+DEBUG 2020-02-20 15:29:09.850 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+ERROR 2020-02-20 15:29:09.850 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost
+ERROR 2020-02-20 15:29:09.851 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost
+DEBUG 2020-02-20 21:19:34.597 UTC: 	 Running on: Linux naf-cms13.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-20 21:19:34.616 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-20 21:19:34.617 UTC: 	 Executing command: 'status'
+DEBUG 2020-02-20 21:19:34.617 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+ERROR 2020-02-20 21:19:34.619 UTC: 	 Error: /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost is not a valid CRAB project directory.
+ERROR 2020-02-20 21:19:34.619 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost is not a valid CRAB project directory.
+DEBUG 2020-02-22 19:46:02.298 UTC: 	 Running on: Linux naf-cms13.desy.de 2.6.32-754.24.3.el6.x86_64 #1 SMP Thu Nov 14 03:23:00 CST 2019 x86_64 x86_64 x86_64 GNU/Linux - Scientific Linux release 6.10 (Carbon)
+DEBUG 2020-02-22 19:46:02.340 UTC: 	 OpenSSl version: OpenSSL 1.0.1e-fips 11 Feb 2013
+DEBUG 2020-02-22 19:46:02.340 UTC: 	 Executing command: 'submit'
+DEBUG 2020-02-22 19:46:02.340 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+DEBUG 2020-02-22 19:46:02.400 UTC: 	 Checking credentials
+DEBUG 2020-02-22 19:46:02.401 UTC: 	 Found proxy file /tmp/x509up_u31835
+DEBUG 2020-02-22 19:46:02.401 UTC: 	 Getting proxy life time left
+DEBUG 2020-02-22 19:46:04.337 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -timeleft
+ output : 82024
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-22 19:46:06.160 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u31835 -actimeleft
+ output : 82022
+
+ error: Picked up _JAVA_OPTIONS: -Xmx256M
+
+ retcode : 0
+DEBUG 2020-02-22 19:46:06.161 UTC: 	 Proxy lifetime 82024 secs is different from voms extension lifetime 82022 secs for proxy: /tmp/x509up_u31835
+DEBUG 2020-02-22 19:46:06.161 UTC: 	 Proxy valid for 22:47:02 hours
+INFO 2020-02-22 19:46:06.161 UTC: 	 Will use CRAB configuration file crab_script.py
+DEBUG 2020-02-22 19:46:06.161 UTC: 	 Loading CRAB configuration file.
+ERROR 2020-02-22 19:46:09.726 UTC: 	 Error while loading CRAB configuration:
+No module named PSet
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2020-02-22 19:46:09.726 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 35, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 320, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+No module named PSet
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2020-03-01 18:18:47.447 UTC: 	 Running on: Linux naf-cms16.desy.de 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-03-01 18:18:47.457 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-03-01 18:18:47.458 UTC: 	 Executing command: 'status'
+DEBUG 2020-03-01 18:18:47.458 UTC: 	 Found CRAB cache file /afs/desy.de/user/h/hengyang/.crab3
+ERROR 2020-03-01 18:18:47.459 UTC: 	 Cannot find .requestcache file in CRAB project directory /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost_1
+ERROR 2020-03-01 18:18:47.459 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 599, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 461, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /afs/desy.de/user/h/hengyang/cms/CMSSW_10_2_11/src/PhysicsTools/NanoAODTools/crab/crab_NanoPost_1
