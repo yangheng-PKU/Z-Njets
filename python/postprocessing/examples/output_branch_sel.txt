@@ -1,0 +1,13 @@
+# this is a comment
+drop * # start with all
+keep z_mass
+keep z_pt 
+keep z_phi
+keep jet_id
+keep jet_pt
+keep jet_phi
+keep dphi_zjet
+keep gen_weight
+keep ngoodjets
+keep pass_selection
+
