@@ -101,11 +101,6 @@ class exampleProducer(Module):
 	    if jets[k].pt < 30:
 		continue
 	    #print(6)
-	    '''
-	    if not (jets[k].jetId & 1):
-		continue
-	    #print(7)
-	    '''
 	    pass_lepton_dr_cut = True
 
 	    for i in range(0,len(tight_muons)):
