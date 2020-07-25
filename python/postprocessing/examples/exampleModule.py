@@ -25,10 +25,6 @@ class exampleProducer(Module):
         self.out.branch("ngoodmuons","I");
         self.out.branch("muon_pt","F",lenVar="ngoodmuons");
         self.out.branch("muon_eta","F",lenVar="ngoodmuons");
-	#self.out.branch("jet_id","I",lenVar="ngoodjets");
-	self.out.branch("jet_pt","F",lenVar="ngoodjets");
-	self.out.branch("jet_phi","F",lenVar="ngoodjets");
-	#self.out.branch("dphi_zjet","F",lenVar="ngoodjets");
     def endFile(self, inputFile, outputFile, inputTree, wrappedOutputTree):
         pass
     def analyze(self, event):
@@ -86,48 +82,7 @@ class exampleProducer(Module):
         
         self.out.fillBranch("muon_pt",goodmuons_pt)
         self.out.fillBranch("muon_eta",goodmuons_eta)        
-        
-	ngoodjets = 0
-        goodjets_pt = []
-	goodjets_id = []
-	goodjets_phi = []
-	goodjets_dphi_zjet = []
-
-	for k in range(0,len(jets)):
-            #print(4)
-	    if abs(jets[k].eta) > 2.4:
-                continue
-            #print(5) 
-	    if jets[k].pt < 30:
-		continue
-	    #print(6)
-	    pass_lepton_dr_cut = True
-
-	    for i in range(0,len(tight_muons)):
-		#if deltaR(muons[tight_muons[i]].eta,muons[tight_muons[i]].phi,jets[k].eta,jets[k].phi) < 0.4:
-                if deltaR(tight_muons[i].eta,tight_muons[i].phi,jets[k].eta,jets[k].phi) < 0.4:
-	            pass_lepton_dr_cut = False
-
-	    if not pass_lepton_dr_cut:
-		continue
-
-            ngoodjets += 1
-            goodjets_pt.append(jets[k].pt)
-	    #goodjets_id.append(jets[k].jetId)
-	    goodjets_phi.append(jets[k].phi)	    
-	    #goodjets_dphi_zjet.append(deltaPhi(Z.Phi(),jets[k].phi))            
-
-        if ngoodjets != len(goodjets_pt):
-            print(error)
-
-        self.out.fillBranch("jet_pt",goodjets_pt)
-	#self.out.fillBranch("jet_id",goodjets_id)
-	self.out.fillBranch("jet_phi",goodjets_phi)
-	#self.out.fillBranch("dphi_zjet",goodjets_dphi_zjet)
-	'''
-	if(njet!=0):
-	    print(njet)
-        '''
+       
 	if hasattr(event,"Generator_weight"):
             self.out.fillBranch("gen_weight",event.Generator_weight)
         else:
